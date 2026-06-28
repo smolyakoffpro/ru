@@ -1046,7 +1046,6 @@
     padding: 8px;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    /* Опционально: скроллбар можно сделать аккуратнее */
     scrollbar-width: thin;
     scrollbar-color: #ccc transparent;
   }
@@ -1106,7 +1105,7 @@
       loading="lazy">
     </iframe>
   </div>
-</div>
+  <!-- Дальше все остальные слайды тоже ВНУТРИ этого div -->
   <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/tMDikngS3Rs"
@@ -1118,16 +1117,6 @@
     </iframe>
   </div>
   <div class="video-slide">
-    <iframe
-      src="https://www.youtube.com/embed/tMDikngS3Rs"
-      title="Видео 4"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-      loading="lazy">
-    </iframe>
-  </div>
-    <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/s4-7THawOuI"
       title="Видео 5"
@@ -1136,8 +1125,8 @@
       allowfullscreen
       loading="lazy">
     </iframe>
-      </div>
-    <div class="video-slide">
+  </div>
+  <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/bbuQMY_AqUA"
       title="Видео 6"
@@ -1146,8 +1135,8 @@
       allowfullscreen
       loading="lazy">
     </iframe>
-    </div>
-    <div class="video-slide">
+  </div>
+  <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/4n9voerlFkg"
       title="Видео 7"
@@ -1156,8 +1145,8 @@
       allowfullscreen
       loading="lazy">
     </iframe>
-     </div>
-    <div class="video-slide">
+  </div>
+  <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/kPGG-Tpmvlk"
       title="Видео 8"
@@ -1166,8 +1155,8 @@
       allowfullscreen
       loading="lazy">
     </iframe>
-     </div>
-    <div class="video-slide">
+  </div>
+  <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/dlMjufd7PfM"
       title="Видео 9"
@@ -1176,8 +1165,8 @@
       allowfullscreen
       loading="lazy">
     </iframe>
-     </div>
-    <div class="video-slide">
+  </div>
+  <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/q-_T8-lgAlo"
       title="Видео 10"
@@ -1186,8 +1175,8 @@
       allowfullscreen
       loading="lazy">
     </iframe>
-     </div>
-    <div class="video-slide">
+  </div>
+  <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/6jdKt0ij_ZE"
       title="Видео 11"
@@ -1196,8 +1185,8 @@
       allowfullscreen
       loading="lazy">
     </iframe>
-     </div>
-    <div class="video-slide">
+  </div>
+  <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/fI7PvyF3r7Q"
       title="Видео 12"
@@ -1206,6 +1195,9 @@
       allowfullscreen
       loading="lazy">
     </iframe>
+  </div>
+</div> <!-- Закрываем carousel только здесь -->
+
 
 
 
