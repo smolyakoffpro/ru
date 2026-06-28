@@ -1033,9 +1033,45 @@
           </div>
         </div>
 
-        <div class="video-carousel" id="carousel">
+      
+<style>
+  .video-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 8px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    /* Опционально: скроллбар можно сделать аккуратнее */
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+  }
+  .video-carousel::-webkit-scrollbar {
+    height: 6px;
+  }
+  .video-carousel::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .video-carousel::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+  }
 
-  <!-- Видео 1 -->
+  .video-slide {
+    min-width: 280px;
+    max-width: 400px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+  .video-slide video,
+  .video-slide iframe {
+    width: 100%;
+    border-radius: 8px;
+    aspect-ratio: 16/9;
+  }
+</style>
+
+<div class="video-carousel" id="carousel">
   <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/ihDCDjJHNl4"
@@ -1045,7 +1081,7 @@
       allowfullscreen
       loading="lazy">
     </iframe>
-  </div>  <!-- Видео 2 -->
+  </div>
   <div class="video-slide">
     <iframe
       src="https://www.youtube.com/embed/3aRaJ3GY4nQ"
@@ -1056,6 +1092,17 @@
       loading="lazy">
     </iframe>
   </div>
+  <div class="video-slide">
+    <iframe
+      src="https://www.youtube.com/embed/QYBBcluvvmo"
+      title="Видео 3"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      loading="lazy">
+    </iframe>
+  </div>
+</div>
 
 
         <div class="recommendations-section">
